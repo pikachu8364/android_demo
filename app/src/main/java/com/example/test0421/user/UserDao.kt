@@ -18,7 +18,7 @@ interface UserDao {
     @Query("SELECT * FROM users ORDER BY name ASC")
     fun getUser():List<User>
     @Query("SELECT * FROM users WHERE id= :userId")
-    fun getUserById(userId: Int):User
+    fun getUserById(userId: Int):User?
     @Query("DELETE FROM users")
     suspend fun deleteAll()
 }
