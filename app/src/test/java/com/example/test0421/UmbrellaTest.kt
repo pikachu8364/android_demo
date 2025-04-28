@@ -17,7 +17,7 @@ class UmbrellaTest {
 //    }
 
     @Test
-    fun totalPrice_sunny() {
+    fun totalPrice_raining() {
         val umbrella = Umbrella()
         val stubWeather = StubWeather()
         stubWeather.fakeIsSunny = true
